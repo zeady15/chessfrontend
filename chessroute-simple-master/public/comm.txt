@@ -1,0 +1,44 @@
+powershell -c "irm bun.sh/install.ps1 | iex"
+
+bun create vite 
+
+bun add bootstrap 
+
+bun add bootstrap-icons
+
+bun add react-router-dom
+
+bun add axios 
+
+npm install
+
+node server.js
+
+axiosra átírás a w3schoolsos cuccot:
+  useEffect(() => {
+    axios.get("https://nodejs.sulla.hu/data")
+      .then((res) => setData(res.data))
+ }, []);
+
+oldal letrehozása: létrehozol uj oldalt aztán rcf - enter
+
+ bootstrap icon valasztás kimasolas egyertelmuen 
+
+egy elem kivalasztas:
+const {id} = useParams();
+    const [data, setData] = useState(null);
+
+    useEffect(() =>{
+        axios.get("https://nodejs.sulla.hu/data/"+id)
+      .then((res) => setData(res.data))
+ }, [1]);
+
+
+w3schools:
+
+https://www.w3schools.com/react/react_forms.asp
+https://www.w3schools.com/react/react_forms_multiple_inputs.asp
+https://getbootstrap.com/docs/5.3/forms/input-group/#basic-example
+
+scaf:
+Scaffold-DbContext "SERVER=localhost;PORT=3306;DATABASE=!!!!!;USER=root;PASSWORD=;" mysql.entityframeworkcore -outputdir Models -f 
