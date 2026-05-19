@@ -87,7 +87,7 @@ export const ChessModPage = () => {
                     </div>
                 </div>
                 <div className="form-group row pb-3">
-                    <label className="col-sm-3 col-form-label">Profil URL-je:</label>
+                    <label className="col-sm-3 col-form-label">Profil URL:</label>
                     <div className="col-sm-9">
                         <input
                             type="text"
